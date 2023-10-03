@@ -875,3 +875,376 @@ NoMethodError - undefined method `email' for nil:NilClass:
   app/views/sessions/new.html.erb:5
 
 Started POST "/__better_errors/87e3c89c9410b512/variables" for ::1 at 2023-10-03 16:36:39 -0400
+Started POST "/__better_errors/87e3c89c9410b512/eval" for ::1 at 2023-10-03 16:39:18 -0400
+Started POST "/__better_errors/87e3c89c9410b512/eval" for ::1 at 2023-10-03 16:39:20 -0400
+Started GET "/session/new" for ::1 at 2023-10-03 16:42:05 -0400
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 85)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 1515)
+Completed 200 OK in 27ms (Views: 1.9ms | ActiveRecord: 12.9ms | Allocations: 9772)
+
+
+Started GET "/session/new" for ::1 at 2023-10-03 16:43:18 -0400
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 1187)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 1434)
+
+
+Started DELETE "/session" for ::1 at 2023-10-03 16:44:07 -0400
+
+AbstractController::ActionNotFound - The action 'destroy' could not be found for SessionsController:
+
+Started POST "/__better_errors/deca03df96a9f48e/variables" for ::1 at 2023-10-03 16:44:07 -0400
+Started DELETE "/session" for ::1 at 2023-10-03 16:46:52 -0400
+Processing by SessionsController#destroy as HTML
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 0ms (ActiveRecord: 0.0ms | Allocations: 691)
+
+
+
+ActionController::InvalidAuthenticityToken - Can't verify CSRF token authenticity.:
+
+Started POST "/__better_errors/945ad63defafcd4a/variables" for ::1 at 2023-10-03 16:46:52 -0400
+Started DELETE "/session" for ::1 at 2023-10-03 16:46:55 -0400
+Processing by SessionsController#destroy as HTML
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 2ms (ActiveRecord: 0.0ms | Allocations: 633)
+
+
+
+ActionController::InvalidAuthenticityToken - Can't verify CSRF token authenticity.:
+
+Started POST "/__better_errors/27a6898fed4c1acc/variables" for ::1 at 2023-10-03 16:46:55 -0400
+Started GET "/users/new" for ::1 at 2023-10-03 16:46:59 -0400
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 75)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 3683)
+Completed 200 OK in 14ms (Views: 7.0ms | ActiveRecord: 6.8ms | Allocations: 4197)
+
+
+Started GET "/users/new" for ::1 at 2023-10-03 16:47:02 -0400
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 41)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 2050)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.7ms | Allocations: 2290)
+
+
+Started POST "/users" for ::1 at 2023-10-03 16:47:12 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"email"=>"claudiahannahh@gmail.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms | Allocations: 664)
+
+
+
+ActionController::InvalidAuthenticityToken - Can't verify CSRF token authenticity.:
+
+Started POST "/__better_errors/8d0c85515b2ad9bb/variables" for ::1 at 2023-10-03 16:47:12 -0400
+Started POST "/users" for ::1 at 2023-10-03 16:55:09 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"email"=>"claudiahannahh@gmail.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 0ms (ActiveRecord: 0.0ms | Allocations: 647)
+
+
+
+ActionController::InvalidAuthenticityToken - Can't verify CSRF token authenticity.:
+
+Started POST "/__better_errors/fe6c7bf35e9d7c1a/variables" for ::1 at 2023-10-03 16:55:09 -0400
+Started GET "/users/new" for ::1 at 2023-10-03 16:55:13 -0400
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 16.4ms | Allocations: 483)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 45.9ms | Allocations: 6759)
+Completed 200 OK in 51ms (Views: 36.6ms | ActiveRecord: 14.0ms | Allocations: 7594)
+
+
+Started GET "/users/new" for ::1 at 2023-10-03 16:55:15 -0400
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 300)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 2072)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.4ms | Allocations: 2313)
+
+
+Started POST "/users" for ::1 at 2023-10-03 16:55:20 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"email"=>"claudiahannahh@gmail.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 3ms (ActiveRecord: 0.0ms | Allocations: 645)
+
+
+
+ActionController::InvalidAuthenticityToken - Can't verify CSRF token authenticity.:
+
+Started POST "/__better_errors/2e84cf95d98cea81/variables" for ::1 at 2023-10-03 16:55:20 -0400
+Started POST "/__better_errors/2e84cf95d98cea81/variables" for ::1 at 2023-10-03 17:00:14 -0400
+Started POST "/__better_errors/2e84cf95d98cea81/variables" for ::1 at 2023-10-03 17:00:16 -0400
+Started POST "/__better_errors/2e84cf95d98cea81/variables" for ::1 at 2023-10-03 17:00:18 -0400
+Started POST "/__better_errors/2e84cf95d98cea81/variables" for ::1 at 2023-10-03 17:00:19 -0400
+Started POST "/__better_errors/2e84cf95d98cea81/variables" for ::1 at 2023-10-03 17:00:21 -0400
+Started POST "/__better_errors/2e84cf95d98cea81/variables" for ::1 at 2023-10-03 17:02:08 -0400
+Started POST "/users" for ::1 at 2023-10-03 17:03:28 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"email"=>"claudiahannahh@gmail.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms | Allocations: 633)
+
+
+
+ActionController::InvalidAuthenticityToken - Can't verify CSRF token authenticity.:
+
+Started POST "/__better_errors/25da9897625adcd9/variables" for ::1 at 2023-10-03 17:03:28 -0400
+Started GET "/users/new" for ::1 at 2023-10-03 17:05:36 -0400
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 243)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 29.9ms | Allocations: 4725)
+Completed 200 OK in 32ms (Views: 21.2ms | ActiveRecord: 10.3ms | Allocations: 4929)
+
+
+Started GET "/session/new" for ::1 at 2023-10-03 17:05:37 -0400
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 509)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 1700)
+Completed 200 OK in 28ms (Views: 7.0ms | ActiveRecord: 8.4ms | Allocations: 3732)
+
+
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (1.9ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "k.com"], ["password_digest", "[FILTERED]"], ["session_token", "[FILTERED]"], ["created_at", "2023-10-03 21:06:46.200150"], ["updated_at", "2023-10-03 21:06:46.200150"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started POST "/session" for ::1 at 2023-10-03 17:07:01 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"k.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms | Allocations: 661)
+
+
+
+ActionController::InvalidAuthenticityToken - Can't verify CSRF token authenticity.:
+
+Started POST "/__better_errors/9688881d6bda99d6/variables" for ::1 at 2023-10-03 17:07:01 -0400
+Started POST "/__better_errors/9688881d6bda99d6/variables" for ::1 at 2023-10-03 17:07:07 -0400
+Started POST "/__better_errors/9688881d6bda99d6/variables" for ::1 at 2023-10-03 17:07:07 -0400
+Started POST "/__better_errors/9688881d6bda99d6/variables" for ::1 at 2023-10-03 17:07:09 -0400
+Started POST "/__better_errors/9688881d6bda99d6/variables" for ::1 at 2023-10-03 17:07:10 -0400
+Started POST "/session" for ::1 at 2023-10-03 17:10:04 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"k.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 2ms (ActiveRecord: 0.0ms | Allocations: 633)
+
+
+
+ActionController::InvalidAuthenticityToken - Can't verify CSRF token authenticity.:
+
+Started POST "/__better_errors/050579d5e5d705bc/variables" for ::1 at 2023-10-03 17:10:04 -0400
+Started GET "/users/new" for ::1 at 2023-10-03 17:10:07 -0400
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 4.4ms | Allocations: 475)
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | Allocations: 4422)
+Completed 200 OK in 23ms (Views: 19.3ms | ActiveRecord: 3.7ms | Allocations: 5192)
+
+
+Started GET "/users/new" for ::1 at 2023-10-03 17:10:33 -0400
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 254)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 3242)
+Completed 200 OK in 13ms (Views: 12.7ms | ActiveRecord: 0.3ms | Allocations: 3463)
+
+
+Started GET "/users/new" for ::1 at 2023-10-03 17:10:46 -0400
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 239)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 3228)
+Completed 200 OK in 20ms (Views: 19.4ms | ActiveRecord: 0.5ms | Allocations: 3432)
+
+
+Started GET "/users/new" for ::1 at 2023-10-03 17:11:07 -0400
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 236)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 20.1ms | Allocations: 3229)
+Completed 200 OK in 21ms (Views: 20.4ms | ActiveRecord: 0.4ms | Allocations: 3433)
+
+
+Started GET "/users/new" for ::1 at 2023-10-03 17:11:08 -0400
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 230)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 1880)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.5ms | Allocations: 2084)
+
+
+Started GET "/users/new" for ::1 at 2023-10-03 17:11:09 -0400
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 242)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 1892)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.3ms | Allocations: 2096)
+
+
+Started GET "/users/new" for ::1 at 2023-10-03 17:11:16 -0400
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 236)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 18.0ms | Allocations: 3228)
+Completed 200 OK in 20ms (Views: 19.8ms | ActiveRecord: 0.4ms | Allocations: 3432)
+
+
+Started GET "/users/new" for ::1 at 2023-10-03 17:12:13 -0400
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 233)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 3225)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.4ms | Allocations: 3429)
+
+
+Started GET "/users/new" for ::1 at 2023-10-03 17:12:14 -0400
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 237)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 1890)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.3ms | Allocations: 2094)
+
+
+Started GET "/session/new" for ::1 at 2023-10-03 17:12:16 -0400
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 6.0ms | Allocations: 474)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 1664)
+Completed 200 OK in 17ms (Views: 16.6ms | ActiveRecord: 0.0ms | Allocations: 2187)
+
+
+Started GET "/users/new" for ::1 at 2023-10-03 17:12:38 -0400
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 224)
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 21.0ms | Allocations: 3430)
+Completed 200 OK in 22ms (Views: 20.8ms | ActiveRecord: 1.3ms | Allocations: 3651)
+
+
+Started GET "/session/new" for ::1 at 2023-10-03 17:12:40 -0400
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 245)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 1241)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 1465)
+
+
+Started POST "/session" for ::1 at 2023-10-03 17:14:42 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"k.", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms | Allocations: 642)
+
+
+
+ActionController::InvalidAuthenticityToken - Can't verify CSRF token authenticity.:
+
+Started POST "/__better_errors/665bd4e8d965906c/variables" for ::1 at 2023-10-03 17:14:42 -0400
+Started POST "/__better_errors/665bd4e8d965906c/variables" for ::1 at 2023-10-03 17:14:45 -0400
+Started POST "/session" for ::1 at 2023-10-03 17:18:43 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"k.", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 3ms (ActiveRecord: 0.0ms | Allocations: 633)
+
+
+
+ActionController::InvalidAuthenticityToken - Can't verify CSRF token authenticity.:
+
+Started POST "/__better_errors/6a867a9896d93544/variables" for ::1 at 2023-10-03 17:18:43 -0400
+Started GET "/users/new" for ::1 at 2023-10-03 17:18:47 -0400
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 266)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 26.6ms | Allocations: 4914)
+Completed 200 OK in 27ms (Views: 19.4ms | ActiveRecord: 7.8ms | Allocations: 5118)
+
+
+Started POST "/users" for ::1 at 2023-10-03 17:18:58 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"email"=>"k.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 2ms (ActiveRecord: 0.0ms | Allocations: 633)
+
+
+
+ActionController::InvalidAuthenticityToken - Can't verify CSRF token authenticity.:
+
+Started POST "/__better_errors/82631a38bd46ca85/variables" for ::1 at 2023-10-03 17:18:59 -0400
+Started POST "/users" for ::1 at 2023-10-03 17:21:19 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"email"=>"k.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms | Allocations: 633)
+
+
+
+ActionController::InvalidAuthenticityToken - Can't verify CSRF token authenticity.:
+
+Started POST "/__better_errors/97531111e19ddf12/variables" for ::1 at 2023-10-03 17:21:19 -0400
